@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+  >
+
+
+<bean name = "mobile" class="spring_demo.Mobile">
+
+<property name = "brand" value="POCO"></property>
+<property name = "price" value="40000"></property>
+<property name = "ram" value="16"></property>
+
+<property name = "Sim" ref="jio" ></property>
+
+</bean>
+
+<bean name="laptop" class="spring_demo.Laptop">
+
+<constructor-arg value="hp"></constructor-arg>
+<constructor-arg value="75000"></constructor-arg>
+<constructor-arg value="32"></constructor-arg>
+
+</bean>
+
+
+<bean name="airtel" class="spring_demo.Airtel">   </bean>
+
+<bean name="jio" class="spring_demo.Jio">   </bean>
+
+
+
+
+
+
+</beans>
